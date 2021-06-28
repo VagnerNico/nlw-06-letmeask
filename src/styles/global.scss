@@ -80,3 +80,18 @@ textarea {
     transition: transform 0.2s linear;
   }
 }
+// React-Modal animation
+.ReactModalPortal {
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+}

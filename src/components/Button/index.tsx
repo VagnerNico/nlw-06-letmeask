@@ -16,7 +16,7 @@ export function Button({
     <button
       {...props}
       className={clx(styles.button, {
-        className: !!className,
+        [className || ""]: !!className,
         [styles.outlined]: isOutlined,
       })}
     >
